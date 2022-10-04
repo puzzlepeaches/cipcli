@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "caniphish"
+version = "0.0.1"
+description = ""
+authors = ["Nicholas Anastasi <nanastasi@sprocketsecurity.com>"]
+readme = "README.md"
+homepage = "https://github.com/puzzlepeaches/caniphish"
+repository = "https://github.com/puzzlepeaches/caniphish"
+exclude = ["tests"]
+include = ["LICENSE", "CHANGELOG.md"]
+license = "BSD 3-Clause License"
+classifiers = [
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+]
+
+packages = [{ include = "caniphish" }]
+
+[tool.poetry.scripts]
+caniphishcli = 'caniphish.__main__:main'
+cipcli = 'caniphish.__main__:main'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "*"
+rich = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+flake8 = "*"
+black = "*"
+pre-commit = "*"
+isort = "*"
+scriv = "*"
+
+[tool.black]
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.tox
+  | venv
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | pyproject\.toml
+)/
+'''
+
+[tool.isort]
+# make it compatible with black
+profile = "black"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
