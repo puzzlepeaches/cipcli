@@ -25,6 +25,7 @@ cipcli = 'caniphish.__main__:main'
 python = "^3.8"
 click = "*"
 rich = "*"
+requests = "^2.28.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "*"
