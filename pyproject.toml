@@ -15,11 +15,10 @@ classifiers = [
   "Topic :: Security",
 ]
 
-packages = [{ include = "caniphish" }]
+packages = [{ include = "cipcli" }]
 
 [tool.poetry.scripts]
-caniphishcli = 'caniphish.__main__:main'
-cipcli = 'caniphish.__main__:main'
+cipcli = 'cipcli.__main__:main'
 
 [tool.poetry.dependencies]
 python = "^3.9"
