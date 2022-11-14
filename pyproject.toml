@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "caniphish"
-version = "0.1.1"
+name = "cipcli"
+version = "0.1.2"
 description = "CLI utility for caniphish.com API"
 authors = ["Nicholas Anastasi <nanastasi@sprocketsecurity.com>"]
 readme = "README.md"
-homepage = "https://github.com/puzzlepeaches/caniphish"
-repository = "https://github.com/puzzlepeaches/caniphish"
+homepage = "https://github.com/puzzlepeaches/cipcli"
+repository = "https://github.com/puzzlepeaches/cipcli"
 exclude = ["tests"]
 include = ["LICENSE", "CHANGELOG.md"]
 license = "BSD 3-Clause License"
