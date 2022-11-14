@@ -3,6 +3,8 @@ TODO.md
 .DS_Store
 *.swp
 Makefile
+.venv
+.devcontainer
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

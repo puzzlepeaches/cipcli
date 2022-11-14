@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "caniphish"
-version = "0.0.1"
-description = ""
+version = "0.1.1"
+description = "CLI utility for caniphish.com API"
 authors = ["Nicholas Anastasi <nanastasi@sprocketsecurity.com>"]
 readme = "README.md"
 homepage = "https://github.com/puzzlepeaches/caniphish"
@@ -22,7 +22,7 @@ caniphishcli = 'caniphish.__main__:main'
 cipcli = 'caniphish.__main__:main'
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 click = "*"
 rich = "*"
 requests = "^2.28.1"

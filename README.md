@@ -31,6 +31,13 @@ If this tool is not yet availible via PyPi, you can install it directly from the
 pipx install git+https://github.com/puzzlepeaches/cipcli.git
 ```
 
+or
+
+```
+git clone ttps://github.com/puzzlepeaches/cipcli.git && cd cipcli
+pip3 install .
+```
+
 For development, clone the repository and install it locally using poetry.
 
 ```
